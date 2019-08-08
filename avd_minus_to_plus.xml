@@ -1,0 +1,46 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="86dp"
+            android:height="86dp"
+            android:viewportWidth="86"
+            android:viewportHeight="86">
+            <group
+                android:name="group"
+                android:pivotX="43"
+                android:pivotY="43">
+                <path
+                    android:name="minus"
+                    android:pathData="M 0 34.5 L 86.194 34.5 L 86.194 51.59 L 0 51.59 Z"
+                    android:fillColor="#64b5f6"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="minus">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="pathData"
+                android:startOffset="300"
+                android:duration="400"
+                android:valueFrom="M 0 34.5 L 34.239 34.5 L 34.478 34.5 L 51.582 34.5 L 51.716 34.5 L 86.194 34.5 L 86.194 51.59 L 52.119 51.59 L 51.716 51.59 L 34.478 51.59 L 34.239 51.59 L 0 51.59 L 0 34.5"
+                android:valueTo="M 0 34.552 L 34.552 34.552 L 34.552 0 L 51.642 0 L 51.642 34.552 L 86.194 34.552 L 86.194 51.642 L 51.642 51.642 L 51.642 86.194 L 34.552 86.194 L 34.552 51.642 L 0 51.642 L 0 34.552"
+                android:valueType="pathType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </aapt:attr>
+    </target>
+    <target android:name="group">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:duration="700"
+                android:valueFrom="0"
+                android:valueTo="180"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/anticipate_overshoot_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>
